@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/heart.png" type="image/x-icon">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Intro</title>
+</head>
+<body>
+   
+   <div class="intro-swiper-container">
+      <a href="" class="ref"><i class="fa-solid fa-arrow-rotate-left fa-3x" ></i></a>
+      <a href="start.html" class="main"><i class="fa-solid fa-house fa-3x"></i></a>
+      
+      <div class="swiper-wrapper">
+         <div class="swiper-slide scene-1"><div class="script"><span class="type" style="--n:72">오래 전, 인간이 컴퓨터를 발명하고, 프로그래밍을 시작했습니다.</span></div></div>
+         <div class="swiper-slide scene-2"><div class="script"><span class="type" style="--n:72">그에 따라, 수많은 인간들이 컴퓨터의 언어를 학습하고 있습니다..</span></div></div>
+         <div class="swiper-slide scene-3"><div class="script"><span class="type" style="--n:25">많은 시간이 흐른 뒤...</span></div></div>
+         <div class="swiper-slide scene-4"><div class="script"><span class="type" style="--n:25">한반도, 2024년.</span></div></div>
+         <div class="swiper-slide scene-5"><div class="script"><span class="type" style="--n:70">전설에 따르면 코딩을 배워두니 미래전도가 유망하다고 합니다..</span></div></div>
+         <div class="swiper-slide scene-6"><div class="script"><span class="type" style="--n:70">그렇게 또 한명의 인간이, 바이너리 세계에 발을 내디뎠습니다.</span></div></div>
+      </div>
+   </div>
+
+   <script>
+      var homeSwiper = new Swiper(".intro-swiper-container", {
+      fadeEffect: { crossFade: true },
+      autoplay: {
+      delay: 4600,
+      disableOnInteraction: true,
+   },
+   slidersPerView: 1,
+   effect: "fade"
+ });
+   </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* The typing effect */
+@keyframes typing {
+   from { width: 0 }
+   to { width: 100% }
+ }
+ 
+
+
+
+html {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+   background:#000;
+   body { 
+      
+      color:#fff;
+      .main {
+         float:right;
+         margin-right:1rem;
+         margin-bottom:1rem;
+         margin-top:9rem
+      }
+      .ref {
+         float:right;
+         margin-top:9rem;
+      }
+      .intro-swiper-container {
+         width:60rem;
+         height:33.3rem;
+         margin:0 auto;
+      .swiper-wrapper {
+         width:60rem;
+         height:33.3rem;
+         margin:11.5rem auto;
+         .scene-1 {
+            
+            background: url('../img/story1.png') no-repeat ;
+            background-size: cover;
+            .script {
+               margin-top:35rem;
+               letter-spacing:0.25rem;
+               line-height:5rem;
+               font-size: 4rem;
+               .type {
+                  color:#0000;
+                  background:
+                  linear-gradient(-90deg,#fff 5px,#0000 0) 10px 0,
+                  linear-gradient(#fff 0 0) 0 0;
+                  background-size:calc(var(--n)*1ch) 200%;
+                  -webkit-background-clip:padding-box,text;
+                  background-clip:padding-box,text;
+                  background-repeat:no-repeat;
+                  animation: 
+                  b .7s infinite steps(1),   
+                  t calc(var(--n)*.0550s) steps(var(--n)) forwards;
+               }
+               @keyframes t{
+                  from {background-size:0 200%}
+               }
+               @keyframes b{
+                  50% {background-position:0 -100%,0 0}
+               }
+            }
+          }
+          .scene-2 {
+            background: url('../img/story2.png') no-repeat ;
+            background-size: cover;
+            .script {
+               margin-top:35rem;
+               letter-spacing:0.25rem;
+               line-height:5rem;
+               font-size: 4rem;
+               .type {
+                  color:#0000;
+                  background:
+                  linear-gradient(-90deg,#fff 5px,#0000 0) 10px 0,
+                  linear-gradient(#fff 0 0) 0 0;
+                  background-size:calc(var(--n)*1ch) 200%;
+                  -webkit-background-clip:padding-box,text;
+                  background-clip:padding-box,text;
+                  background-repeat:no-repeat;
+                  animation: 
+                  b .7s infinite steps(1),   
+                  t calc(var(--n)*.0580s) steps(var(--n)) forwards;
+                  animation-delay: 4.7s
+
+               }
+               @keyframes t{
+                  from {background-size:0 200%}
+               }
+               @keyframes b{
+                  50% {background-position:0 -100%,0 0}
+               }
+            }
+          }
+          .scene-3 {
+            background: url('../img/story3.png') no-repeat ;
+            background-size: cover;
+            .script {
+               margin-top:35rem;
+               letter-spacing:0.25rem;
+               line-height:5rem;
+               font-size: 4rem;
+               .type {
+                  color:#0000;
+                  background:
+                  linear-gradient(-90deg,#fff 5px,#0000 0) 10px 0,
+                  linear-gradient(#fff 0 0) 0 0;
+                  background-size:calc(var(--n)*1ch) 200%;
+                  -webkit-background-clip:padding-box,text;
+                  background-clip:padding-box,text;
+                  background-repeat:no-repeat;
+                  animation: 
+                  b .7s infinite steps(1),   
+                  t calc(var(--n)*.0650s) steps(var(--n)) forwards;
+                  animation-delay: 9.4s;
+               }
+               @keyframes t{
+                  from {background-size:0 200%}
+               }
+               @keyframes b{
+                  50% {background-position:0 -100%,0 0}
+               }
+            }
+          }
+          .scene-4 {
+            background: url('../img/story4.jpg') no-repeat ;
+            background-size: cover;
+            .script {
+               
+               margin-top:35rem;
+               letter-spacing:0.25rem;
+               line-height:5rem;
+               font-size: 4rem;
+               .type {
+                  
+                  color:#0000;
+                  background:
+                  linear-gradient(-90deg,#fff 5px,#0000 0) 10px 0,
+                  linear-gradient(#fff 0 0) 0 0;
+                  background-size:calc(var(--n)*1ch) 200%;
+                  -webkit-background-clip:padding-box,text;
+                  background-clip:padding-box,text;
+                  background-repeat:no-repeat;
+                  animation: 
+                  b .7s infinite steps(1),   
+                  t calc(var(--n)*.0826s) steps(var(--n)) forwards;
+                  animation-delay: 14.6s;
+               }
+               @keyframes t{
+                  from {background-size:0 200%}
+               }
+               @keyframes b{
+                  50% {background-position:0 -100%,0 0}
+               }
+            }
+          }
+          .scene-5 {
+            background: url('../img/story5.png') no-repeat ;
+            background-size: cover;
+            .script {
+               margin-top:35rem;
+               letter-spacing:0.25rem;
+               line-height:5rem;
+               font-size: 4rem;
+               .type {
+                  color:#0000;
+                  background:
+                  linear-gradient(-90deg,#fff 5px,#0000 0) 10px 0,
+                  linear-gradient(#fff 0 0) 0 0;
+                  background-size:calc(var(--n)*1ch) 200%;
+                  -webkit-background-clip:padding-box,text;
+                  background-clip:padding-box,text;
+                  background-repeat:no-repeat;
+                  animation: 
+                  b .7s infinite steps(1),   
+                  t calc(var(--n)*.0650s) steps(var(--n)) forwards;
+                  animation-delay: 19.4s;
+               }
+               @keyframes t{
+                  from {background-size:0 200%}
+               }
+               @keyframes b{
+                  50% {background-position:0 -100%,0 0}
+               }
+            }
+          }
+          .scene-6 {
+            background: url('../img/story6.png') no-repeat ;
+            background-size: cover;
+            .script {
+               margin-top:35rem;
+               letter-spacing:0.25rem;
+               line-height:5rem;
+               font-size: 4rem;
+               .type {
+                  color:#0000;
+                  background:
+                  linear-gradient(-90deg,#fff 5px,#0000 0) 10px 0,
+                  linear-gradient(#fff 0 0) 0 0;
+                  background-size:calc(var(--n)*1ch) 200%;
+                  -webkit-background-clip:padding-box,text;
+                  background-clip:padding-box,text;
+                  background-repeat:no-repeat;
+                  animation: 
+                  b .7s infinite steps(1),   
+                  t calc(var(--n)*.0580s) steps(var(--n)) forwards;
+                  animation-delay: 24.3s;
+               }
+               @keyframes t{
+                  from {background-size:0 200%}
+               }
+               @keyframes b{
+                  50% {background-position:0 -100%,0 0}
+               }
+            }
+          }
+
+         
+         
+      }
+   }
+}
+}

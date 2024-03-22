@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'DeterminationMonoK2';
+  src: url('../font/DeterminationMonoK2.woff2') format('woff2'),
+      url('../font/DeterminationMonoK2.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeterminationSansK2';
+  src: url('../font/DeterminationSansK2.woff2') format('woff2'),
+      url('../font/DeterminationSansK2.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gamtan';
+  src: url('../font/GamtanRoadBatangBoldTTF.woff2') format("woff2"),
+    url('../font/GamtanRoadBatangBoldTTF.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+* { 
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+html { 
+  font-size:62.5%
+  /*  10px 정도가 됨*/
+}
+
+body {
+  font-family: 'DeterminationMonoK2', 'DeterminationSansK2', sans-serif;
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  
+    
+  &:target {
+      visibility: visible;
+      opacity: 1;
+      
+  }
+ 
+ 
+ }
+.popup {
+    border:7px solid #fff;
+    margin: 5rem auto;
+    padding: 3rem;
+    background: #000;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    p {
+       margin-top: 0;
+       color: #fff;
+    }
+    p:first-child {
+       font-size: 5rem;
+    }
+    
+    .close {
+       position: absolute;
+       top: 1rem;
+       right: 3rem;
+       transition: all 200ms;
+       font-size: 3.5rem;
+       font-weight: bold;
+       text-decoration: none;
+      color: #fff;
+      &:hover {
+          color: #fff500;
+       }
+     }
+     .content {
+      
+       margin-top:2rem;
+       max-height: 30%;
+       overflow: auto;
+       p {
+          margin-top:2rem;
+          font-size: 3rem;
+       }
+       input {
+          width:100%;
+          font-size: 2rem;
+          margin-top:2rem;
+          color:#fff;
+          background:transparent;
+          border:none;
+          border-bottom:3px solid #fff;
+          &:focus {
+             border-bottom:3px solid #fff500;
+          }
+       }
+       .par {
+          height:20rem;
+       }
+       .submit {
+          text-align:center;
+          font-size: 4rem;
+       p:hover {
+          color:#fff500;
+       }
+    }
+    
+     }
+     
+
+ }
+}
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+
+}

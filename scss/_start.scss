@@ -1,0 +1,46 @@
+
+.start_body {
+
+   
+
+   
+   
+   width:80rem;
+   margin:0 auto;
+   img {
+      margin:12rem 0 10rem;
+      
+      
+      
+
+   }
+   
+   .menu_wrap {
+      
+      display:flex;
+      justify-content: center;
+   .menu {
+      width:fit-content;
+      margin:0 auto;
+      a {
+      li { 
+         margin-bottom:2rem;
+         font-size: 5rem;
+         i {
+            color:#fff500;
+            visibility: hidden;
+         }
+
+      }
+   }
+   a:hover {
+      li {
+         color:#fff500;
+         i {
+            visibility: visible;
+         }
+      }
+   }
+}
+}
+}
