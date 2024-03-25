@@ -1,18 +1,18 @@
 @font-face {
   font-family: "DeterminationMonoK2";
-  src: url("../font/DeterminationMonoK2.ttf") format("truetype");
+  src: url("./font/DeterminationMonoK2.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "DeterminationSansK2";
-  src: url("../font/DeterminationSansK2.ttf") format("truetype");
+  src: url("./font/DeterminationSansK2.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "gamtan";
-  src: url("../font/gamtanroadbold.ttf") format("truetype");
+  src: url("./font/gamtanroadbold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
