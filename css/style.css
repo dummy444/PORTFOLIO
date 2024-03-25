@@ -1,0 +1,2493 @@
+@font-face {
+  font-family: "DeterminationMonoK2";
+  src: url("/font/DeterminationMonoK2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DeterminationSansK2";
+  src: url("/font/DeterminationSansK2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gamtan";
+  src: url("/font/gamtanroadbold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DeterminationMonoK2", "DeterminationSansK2", sans-serif;
+}
+body .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+body .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+body .popup {
+  border: 7px solid #fff;
+  margin: 5rem auto;
+  padding: 3rem;
+  background: #000;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+body .popup p {
+  margin-top: 0;
+  color: #fff;
+}
+body .popup p:first-child {
+  font-size: 5rem;
+}
+body .popup .close {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  transition: all 200ms;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+body .popup .close:hover {
+  color: #fff500;
+}
+body .popup .content {
+  margin-top: 2rem;
+  max-height: 30%;
+  overflow: auto;
+}
+body .popup .content p {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+body .popup .content input {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
+}
+body .popup .content input:focus {
+  border-bottom: 3px solid #fff500;
+}
+body .popup .content .par {
+  height: 20rem;
+}
+body .popup .content .submit {
+  text-align: center;
+  font-size: 4rem;
+}
+body .popup .content .submit p:hover {
+  color: #fff500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+html {
+  background: #000;
+}
+html body {
+  color: #fff;
+}
+html body .main {
+  float: right;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 9rem;
+}
+html body .ref {
+  float: right;
+  margin-top: 9rem;
+}
+html body .intro-swiper-container {
+  width: 60rem;
+  height: 33.3rem;
+  margin: 0 auto;
+}
+html body .intro-swiper-container .swiper-wrapper {
+  width: 60rem;
+  height: 33.3rem;
+  margin: 11.5rem auto;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-1 {
+  background: url("../img/story1.png") no-repeat;
+  background-size: cover;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-1 .script {
+  margin-top: 35rem;
+  letter-spacing: 0.25rem;
+  line-height: 5rem;
+  font-size: 4rem;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-1 .script .type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.055s) steps(var(--n)) forwards;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+html body .intro-swiper-container .swiper-wrapper .scene-2 {
+  background: url("../img/story2.png") no-repeat;
+  background-size: cover;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-2 .script {
+  margin-top: 35rem;
+  letter-spacing: 0.25rem;
+  line-height: 5rem;
+  font-size: 4rem;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-2 .script .type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.058s) steps(var(--n)) forwards;
+  animation-delay: 4.7s;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+html body .intro-swiper-container .swiper-wrapper .scene-3 {
+  background: url("../img/story3.png") no-repeat;
+  background-size: cover;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-3 .script {
+  margin-top: 35rem;
+  letter-spacing: 0.25rem;
+  line-height: 5rem;
+  font-size: 4rem;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-3 .script .type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.065s) steps(var(--n)) forwards;
+  animation-delay: 9.4s;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+html body .intro-swiper-container .swiper-wrapper .scene-4 {
+  background: url("../img/story4.jpg") no-repeat;
+  background-size: cover;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-4 .script {
+  margin-top: 35rem;
+  letter-spacing: 0.25rem;
+  line-height: 5rem;
+  font-size: 4rem;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-4 .script .type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.0826s) steps(var(--n)) forwards;
+  animation-delay: 14.6s;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+html body .intro-swiper-container .swiper-wrapper .scene-5 {
+  background: url("../img/story5.png") no-repeat;
+  background-size: cover;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-5 .script {
+  margin-top: 35rem;
+  letter-spacing: 0.25rem;
+  line-height: 5rem;
+  font-size: 4rem;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-5 .script .type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.065s) steps(var(--n)) forwards;
+  animation-delay: 19.4s;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+html body .intro-swiper-container .swiper-wrapper .scene-6 {
+  background: url("../img/story6.png") no-repeat;
+  background-size: cover;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-6 .script {
+  margin-top: 35rem;
+  letter-spacing: 0.25rem;
+  line-height: 5rem;
+  font-size: 4rem;
+}
+html body .intro-swiper-container .swiper-wrapper .scene-6 .script .type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.058s) steps(var(--n)) forwards;
+  animation-delay: 24.3s;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+
+.start_body {
+  width: 80rem;
+  margin: 0 auto;
+}
+.start_body img {
+  margin: 12rem 0 10rem;
+}
+.start_body .menu_wrap {
+  display: flex;
+  justify-content: center;
+}
+.start_body .menu_wrap .menu {
+  width: fit-content;
+  margin: 0 auto;
+}
+.start_body .menu_wrap .menu a li {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+}
+.start_body .menu_wrap .menu a li i {
+  color: #fff500;
+  visibility: hidden;
+}
+.start_body .menu_wrap .menu a:hover li {
+  color: #fff500;
+}
+.start_body .menu_wrap .menu a:hover li i {
+  visibility: visible;
+}
+
+.bg {
+  background: url("../img/worldmap.png") no-repeat 100%;
+  width: 361rem;
+  height: 102.4rem;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+.bg ::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.bg .black {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.5);
+  -ms-overflow-style: none; /* IE, Edge */
+}
+.bg .black .mainw {
+  position: absolute;
+  top: 12rem;
+  left: 3rem;
+}
+.bg .black .title {
+  position: absolute;
+  top: 11rem;
+  left: 11rem;
+}
+.bg .black .title p {
+  font-size: 5rem;
+}
+.bg .black .work1 {
+  position: absolute;
+  top: 35rem;
+  left: 62rem;
+  position: relative;
+  background: url("../img/bubble.png");
+  width: 39rem;
+  height: 31rem;
+}
+.bg .black .work1 a {
+  position: relative;
+  position: absolute;
+  top: 3rem;
+  left: 4.7rem;
+}
+.bg .black .work1 a:hover img:nth-child(2) {
+  visibility: visible;
+}
+.bg .black .work1 a:hover p {
+  visibility: visible;
+}
+.bg .black .work1 a img:first-child {
+  width: 30rem;
+  height: 18rem;
+  filter: brightness(1);
+  transition: 0.3s;
+}
+.bg .black .work1 a img:first-child:hover {
+  filter: brightness(0.3);
+}
+.bg .black .work1 a img:nth-child(2) {
+  transition: 0.1s;
+  visibility: hidden;
+  width: 10rem;
+  position: absolute;
+  top: 3rem;
+  left: 10.5rem;
+}
+.bg .black .work1 a p {
+  transition: 0.1s;
+  visibility: hidden;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 12.5rem;
+  left: 10.5rem;
+}
+.bg .black .work2 {
+  position: absolute;
+  top: -17rem;
+  left: 147rem;
+  position: relative;
+  background: url("../img/bubble.png");
+  width: 39rem;
+  height: 31rem;
+}
+.bg .black .work2 a {
+  position: absolute;
+  top: 3rem;
+  left: 4.7rem;
+}
+.bg .black .work2 a:hover img:nth-child(2) {
+  visibility: visible;
+}
+.bg .black .work2 a:hover p {
+  visibility: visible;
+}
+.bg .black .work2 a img:first-child {
+  width: 30rem;
+  height: 18rem;
+  filter: brightness(1);
+  transition: 0.3s;
+}
+.bg .black .work2 a img:first-child:hover {
+  filter: brightness(0.3);
+}
+.bg .black .work2 a img:nth-child(2) {
+  transition: 0.1s;
+  visibility: hidden;
+  width: 10rem;
+  position: absolute;
+  top: 3rem;
+  left: 10.5rem;
+}
+.bg .black .work2 a p {
+  transition: 0.1s;
+  visibility: hidden;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 12.5rem;
+  left: 10.5rem;
+}
+.bg .work3 {
+  position: absolute;
+  top: -2rem;
+  left: 125rem;
+  position: relative;
+  background: url("../img/bubble.png");
+  width: 39rem;
+  height: 31rem;
+}
+.bg .work3 a {
+  position: absolute;
+  top: 3rem;
+  left: 4.7rem;
+}
+.bg .work3 a:hover img:nth-child(2) {
+  visibility: visible;
+}
+.bg .work3 a:hover p {
+  visibility: visible;
+}
+.bg .work3 a img:first-child {
+  width: 30rem;
+  height: 18rem;
+  filter: brightness(1);
+  transition: 0.3s;
+}
+.bg .work3 a img:first-child:hover {
+  filter: brightness(0.3);
+}
+.bg .work3 a img:nth-child(2) {
+  transition: 0.1s;
+  visibility: hidden;
+  width: 10rem;
+  position: absolute;
+  top: 3rem;
+  left: 10.5rem;
+}
+.bg .work3 a p {
+  transition: 0.1s;
+  visibility: hidden;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 12.5rem;
+  left: 10.5rem;
+}
+
+.work4 {
+  position: absolute;
+  top: -32rem;
+  left: 215rem;
+  position: relative;
+  background: url("../img/bubble.png");
+  width: 39rem;
+  height: 31rem;
+}
+.work4 a {
+  position: absolute;
+  top: 3rem;
+  left: 4.7rem;
+}
+.work4 a:hover img:nth-child(2) {
+  visibility: visible;
+}
+.work4 a:hover p {
+  visibility: visible;
+}
+.work4 a img:first-child {
+  width: 30rem;
+  height: 18rem;
+  filter: brightness(1);
+  transition: 0.3s;
+}
+.work4 a img:first-child:hover {
+  filter: brightness(0.3);
+}
+.work4 a img:nth-child(2) {
+  transition: 0.1s;
+  visibility: hidden;
+  width: 10rem;
+  position: absolute;
+  top: 3rem;
+  left: 10.5rem;
+}
+.work4 a p {
+  transition: 0.1s;
+  visibility: hidden;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 12.5rem;
+  left: 10.5rem;
+}
+
+.work5 {
+  position: absolute;
+  top: -120rem;
+  left: 230rem;
+  position: relative;
+  background: url("../img/bubble.png");
+  width: 39rem;
+  height: 31rem;
+}
+.work5 a {
+  position: absolute;
+  top: 3rem;
+  left: 4.7rem;
+}
+.work5 a:hover img:nth-child(2) {
+  visibility: visible;
+}
+.work5 a:hover p {
+  visibility: visible;
+}
+.work5 a img:first-child {
+  width: 30rem;
+  height: 18rem;
+  filter: brightness(1);
+  transition: 0.3s;
+}
+.work5 a img:first-child:hover {
+  filter: brightness(0.3);
+}
+.work5 a img:nth-child(2) {
+  transition: 0.1s;
+  visibility: hidden;
+  width: 10rem;
+  position: absolute;
+  top: 3rem;
+  left: 10.5rem;
+}
+.work5 a p {
+  transition: 0.1s;
+  visibility: hidden;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 12.5rem;
+  left: 10.5rem;
+}
+
+.work6 {
+  position: absolute;
+  top: -127rem;
+  left: 283rem;
+  position: relative;
+  background: url("../img/bubble.png");
+  width: 39rem;
+  height: 31rem;
+}
+.work6 a {
+  position: absolute;
+  top: 3rem;
+  left: 4.7rem;
+}
+.work6 a:hover img:nth-child(2) {
+  visibility: visible;
+}
+.work6 a:hover p {
+  visibility: visible;
+}
+.work6 a img:first-child {
+  width: 30rem;
+  height: 18rem;
+  filter: brightness(1);
+  transition: 0.3s;
+}
+.work6 a img:first-child:hover {
+  filter: brightness(0.3);
+}
+.work6 a img:nth-child(2) {
+  transition: 0.1s;
+  visibility: hidden;
+  width: 10rem;
+  position: absolute;
+  top: 3rem;
+  left: 10.5rem;
+}
+.work6 a p {
+  transition: 0.1s;
+  visibility: hidden;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 12.5rem;
+  left: 10.5rem;
+}
+
+.infoBody .infomain {
+  position: relative;
+  width: 136.6rem;
+  height: fit-content;
+  background: url("../img/home.png") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+}
+.infoBody .infomain .infoleft {
+  width: 27.5rem;
+  margin-top: 25rem;
+  margin-left: 9rem;
+}
+.infoBody .infomain .infoleft .userinfo {
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  padding: 1rem;
+}
+.infoBody .infomain .infoleft .userinfo .refi {
+  position: absolute;
+  top: 5.5rem;
+  right: 27rem;
+}
+.infoBody .infomain .infoleft .userinfo .username {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.infoBody .infomain .infoleft .userinfo .userlv {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain .infoleft .userinfo .userhp {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain .infoleft .userinfo .userg {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain .infoleft .userwork {
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+}
+.infoBody .infomain .infoleft .userwork li {
+  margin-bottom: 2rem;
+}
+.infoBody .infomain .infoleft .userwork li a {
+  font-size: 4rem;
+}
+.infoBody .infomain .infoleft .userwork li a:hover {
+  color: #fff500;
+}
+.infoBody .infomain .infoleft .userwork li .active {
+  color: #fff500;
+}
+.infoBody .infomain .infoleft .userwork li:last-child {
+  margin: none;
+}
+.infoBody .infomain .inforight {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  width: 76rem;
+  height: 95rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.infoBody .infomain .inforight h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+.infoBody .infomain .inforight .infoinfo {
+  display: flex;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft .link {
+  display: flex;
+  gap: 1.5rem;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft .link a {
+  font-size: 5rem;
+  color: #fff500;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft .link a:hover {
+  text-decoration: underline;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft img {
+  width: 60rem;
+  height: 50rem;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft p {
+  margin-top: 1rem;
+  font-size: 3.3rem;
+  font-family: "DeterminationSansK2";
+  letter-spacing: 0.2rem;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft p:nth-child(3) {
+  margin-top: 3rem;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft p:nth-child(4) {
+  margin-top: 3rem;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft a {
+  line-height: 12rem;
+  font-size: 5rem;
+  color: #fff500;
+}
+.infoBody .infomain .inforight .infoinfo .infoinfoleft a:hover {
+  text-decoration: underline;
+}
+.infoBody .infomain .inforight .infoinfo .infoinforight li {
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.infoBody .infomain .inforight .infoinfo .infoinforight li img {
+  margin-bottom: 0.1rem;
+  height: 6rem;
+}
+.infoBody .infomain1 {
+  width: 136.6rem;
+  height: fit-content;
+  background: url("../img/snowdin.png") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+}
+.infoBody .infomain1 .infoleft {
+  width: 27.5rem;
+  margin-top: 25rem;
+  margin-left: 9rem;
+}
+.infoBody .infomain1 .infoleft .userinfo {
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  padding: 1rem;
+}
+.infoBody .infomain1 .infoleft .userinfo .refi {
+  position: absolute;
+  top: 5.5rem;
+  right: 54rem;
+}
+.infoBody .infomain1 .infoleft .userinfo .username {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.infoBody .infomain1 .infoleft .userinfo .userlv {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain1 .infoleft .userinfo .userhp {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain1 .infoleft .userinfo .userg {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain1 .infoleft .userwork {
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+}
+.infoBody .infomain1 .infoleft .userwork li {
+  margin-bottom: 2rem;
+}
+.infoBody .infomain1 .infoleft .userwork li a {
+  font-size: 4rem;
+}
+.infoBody .infomain1 .infoleft .userwork li a:hover {
+  color: #fff500;
+}
+.infoBody .infomain1 .infoleft .userwork li .active {
+  color: #fff500;
+}
+.infoBody .infomain1 .infoleft .userwork li:last-child {
+  margin: none;
+}
+.infoBody .infomain1 .inforight {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  width: 76rem;
+  height: 95rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.infoBody .infomain1 .inforight h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+.infoBody .infomain1 .inforight .infoinfo {
+  display: flex;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft .link {
+  display: flex;
+  gap: 1.5rem;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft .link a {
+  font-size: 5rem;
+  color: #fff500;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft .link a:hover {
+  text-decoration: underline;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft img {
+  width: 60rem;
+  height: 50rem;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft p {
+  margin-top: 1rem;
+  font-size: 3.3rem;
+  font-family: "DeterminationSansK2";
+  letter-spacing: 0.2rem;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft p:nth-child(3) {
+  margin-top: 3rem;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft p:nth-child(4) {
+  margin-top: 3rem;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft a {
+  line-height: 12rem;
+  font-size: 5rem;
+  color: #fff500;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinfoleft a:hover {
+  text-decoration: underline;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinforight li {
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.infoBody .infomain1 .inforight .infoinfo .infoinforight li img {
+  margin-bottom: 0.1rem;
+  height: 6rem;
+}
+.infoBody .infomain2 {
+  width: 136.6rem;
+  height: fit-content;
+  background: url("../img/hotland.png") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+}
+.infoBody .infomain2 .infoleft {
+  width: 27.5rem;
+  margin-top: 25rem;
+  margin-left: 9rem;
+}
+.infoBody .infomain2 .infoleft .userinfo {
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  padding: 1rem;
+}
+.infoBody .infomain2 .infoleft .userinfo .refi {
+  position: absolute;
+  top: 5.5rem;
+  right: 54.5rem;
+}
+.infoBody .infomain2 .infoleft .userinfo .username {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.infoBody .infomain2 .infoleft .userinfo .userlv {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain2 .infoleft .userinfo .userhp {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain2 .infoleft .userinfo .userg {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain2 .infoleft .userwork {
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+}
+.infoBody .infomain2 .infoleft .userwork li {
+  margin-bottom: 2rem;
+}
+.infoBody .infomain2 .infoleft .userwork li a {
+  font-size: 4rem;
+}
+.infoBody .infomain2 .infoleft .userwork li a:hover {
+  color: #fff500;
+}
+.infoBody .infomain2 .infoleft .userwork li .active {
+  color: #fff500;
+}
+.infoBody .infomain2 .infoleft .userwork li:last-child {
+  margin: none;
+}
+.infoBody .infomain2 .inforight {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  width: 76rem;
+  height: 95rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.infoBody .infomain2 .inforight h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+.infoBody .infomain2 .inforight .infoinfo {
+  display: flex;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft .link {
+  display: flex;
+  gap: 1.5rem;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft .link a {
+  font-size: 5rem;
+  color: #fff500;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft .link a:hover {
+  text-decoration: underline;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft img {
+  width: 60rem;
+  height: 50rem;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft p {
+  margin-top: 1rem;
+  font-size: 3.3rem;
+  font-family: "DeterminationSansK2";
+  letter-spacing: 0.2rem;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft p:nth-child(3) {
+  margin-top: 3rem;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft p:nth-child(4) {
+  margin-top: 3rem;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft a {
+  line-height: 12rem;
+  font-size: 5rem;
+  color: #fff500;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinfoleft a:hover {
+  text-decoration: underline;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinforight li {
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.infoBody .infomain2 .inforight .infoinfo .infoinforight li img {
+  margin-bottom: 0.1rem;
+  height: 6rem;
+}
+.infoBody .infomain3 {
+  width: 136.6rem;
+  height: fit-content;
+  background: url("../img/waterfall.png") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+}
+.infoBody .infomain3 .infoleft {
+  width: 27.5rem;
+  margin-top: 25rem;
+  margin-left: 9rem;
+}
+.infoBody .infomain3 .infoleft .userinfo {
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  padding: 1rem;
+}
+.infoBody .infomain3 .infoleft .userinfo .refi {
+  position: absolute;
+  top: 7rem;
+  right: 55rem;
+}
+.infoBody .infomain3 .infoleft .userinfo .username {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.infoBody .infomain3 .infoleft .userinfo .userlv {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain3 .infoleft .userinfo .userhp {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain3 .infoleft .userinfo .userg {
+  margin-left: 1.4rem;
+  font-size: 3rem;
+}
+.infoBody .infomain3 .infoleft .userwork {
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+}
+.infoBody .infomain3 .infoleft .userwork li {
+  margin-bottom: 2rem;
+}
+.infoBody .infomain3 .infoleft .userwork li a {
+  font-size: 4rem;
+}
+.infoBody .infomain3 .infoleft .userwork li a:hover {
+  color: #fff500;
+}
+.infoBody .infomain3 .infoleft .userwork li .active {
+  color: #fff500;
+}
+.infoBody .infomain3 .infoleft .userwork li:last-child {
+  margin: none;
+}
+.infoBody .infomain3 .inforight {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  background: #000;
+  border: 7px solid #fff;
+  color: #fff;
+  width: 76rem;
+  height: 95rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.infoBody .infomain3 .inforight h2 {
+  font-size: 6rem;
+  margin: 2rem 0;
+}
+.infoBody .infomain3 .inforight .infoinfo {
+  display: flex;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft .link {
+  display: flex;
+  gap: 1.5rem;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft .link a {
+  font-size: 5rem;
+  color: #fff500;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft .link a:hover {
+  text-decoration: underline;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft img {
+  width: 60rem;
+  height: 50rem;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft p {
+  margin-top: 1rem;
+  font-size: 3.3rem;
+  font-family: "DeterminationSansK2";
+  letter-spacing: 0.2rem;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft p:nth-child(3) {
+  margin-top: 3rem;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft p:nth-child(4) {
+  margin-top: 3rem;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft a {
+  line-height: 12rem;
+  font-size: 5rem;
+  color: #fff500;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinfoleft a:hover {
+  text-decoration: underline;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinforight li {
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.infoBody .infomain3 .inforight .infoinfo .infoinforight li img {
+  margin-bottom: 0.1rem;
+  height: 6rem;
+}
+
+.profbody main .main-top {
+  width: 120rem;
+  height: fit-content;
+  border: 2px solid #24b63b;
+  margin: 2.6rem auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 6fr;
+}
+.profbody main .main-top .a {
+  color: transparent;
+  border-right: 2px solid #24b63b;
+  display: grid;
+  grid-template-rows: 2fr 4fr 1fr;
+}
+.profbody main .main-top .a .ab {
+  border-top: 2px solid #24b63b;
+  border-bottom: 2px solid #24b63b;
+}
+.profbody main .main-top .b {
+  color: transparent;
+  border-right: 2px solid #24b63b;
+  display: grid;
+  grid-template-rows: 2fr 4fr 1fr;
+}
+.profbody main .main-top .b .ba {
+  position: relative;
+}
+.profbody main .main-top .b .ba img {
+  position: absolute;
+  top: 5rem;
+}
+.profbody main .main-top .b .bb {
+  background: url("../img/pyro.gif") no-repeat;
+  background-size: cover;
+  border-top: 2px solid #24b63b;
+  border-bottom: 2px solid #24b63b;
+}
+.profbody main .main-top .c {
+  color: transparent;
+  display: grid;
+  grid-template-columns: 4fr 4.25fr 7fr 3fr;
+}
+.profbody main .main-top .c .ca {
+  display: grid;
+  grid-template-rows: 3fr 10fr 14fr 1fr;
+}
+.profbody main .main-top .c .ca .cad {
+  background: url("../img/bug.gif") no-repeat;
+  background-size: cover;
+}
+.profbody main .main-top .c .ca .cab, .profbody main .main-top .c .ca .cad {
+  border-top: 2px solid #24b63b;
+  border-bottom: 2px solid #24b63b;
+}
+.profbody main .main-top .c .cb {
+  border-left: 2px solid #24b63b;
+  border-right: 2px solid #24b63b;
+  display: grid;
+  grid-template-rows: 3fr 10fr 4.5fr 21fr 1fr;
+}
+.profbody main .main-top .c .cb .cbb, .profbody main .main-top .c .cb .cbd {
+  border-top: 2px solid #24b63b;
+  border-bottom: 2px solid #24b63b;
+}
+.profbody main .main-top .c .cb .cbc {
+  background: url("../img/glitch2.gif") no-repeat;
+  background-size: cover;
+}
+.profbody main .main-top .c .cb .cbd {
+  background: url("../img/glitch.gif") no-repeat;
+  background-size: cover;
+}
+.profbody main .main-top .c .cc {
+  display: grid;
+  grid-template-rows: 3fr 10fr 4.5fr 21fr 1fr;
+}
+.profbody main .main-top .c .cc .ccc {
+  background: url("../img/error.gif") no-repeat;
+  background-size: cover;
+}
+.profbody main .main-top .c .cc .ccb {
+  background: url("../img/404.gif") no-repeat;
+  background-size: cover;
+}
+.profbody main .main-top .c .cc .ccb, .profbody main .main-top .c .cc .ccd {
+  border-top: 2px solid #24b63b;
+  border-bottom: 2px solid #24b63b;
+}
+.profbody main .main-top .c .cc .ccd {
+  background: url("../img/glitch1.gif") no-repeat;
+  background-size: cover;
+}
+.profbody main .main-top .c .cd {
+  border-left: 2px solid #24b63b;
+  display: grid;
+  grid-template-rows: 3fr 10fr 4.5fr 21fr 1fr;
+}
+.profbody main .main-top .c .cd .cdc {
+  background: url("../img/bughor.gif") no-repeat;
+  background-size: cover;
+}
+.profbody main .main-top .c .cd .cdb, .profbody main .main-top .c .cd .cdd {
+  border-top: 2px solid #24b63b;
+  border-bottom: 2px solid #24b63b;
+}
+.profbody main .main-bot {
+  width: 110rem;
+  margin: 0 auto;
+}
+.profbody main .main-bot .textbox {
+  position: relative;
+  height: 32rem;
+  border: 7px solid #fff;
+}
+.profbody main .main-bot .textbox .mainp {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+.profbody main .main-bot .textbox .typing {
+  font-size: 5.5rem;
+  padding: 3.5rem 5rem;
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.0825s) steps(var(--n)) forwards;
+}
+.profbody main .main-bot .choice {
+  margin-top: 2rem;
+  font-family: "gamtan";
+  font-size: 5rem;
+}
+.profbody main .main-bot .choice .select {
+  display: flex;
+  gap: 7rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.profbody main .main-bot .choice .select a {
+  color: #ff9800;
+  text-align: center;
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  border: 7px solid #ff9800;
+}
+.profbody main .main-bot .choice .select a:first-child p {
+  position: relative;
+}
+.profbody main .main-bot .choice .select a:first-child p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody main .main-bot .choice .select a:first-child p img:first-child {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+.profbody main .main-bot .choice .select a:first-child p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+.profbody main .main-bot .choice .select a:first-child:hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody main .main-bot .choice .select a:first-child:hover p img:first-child {
+  display: none;
+}
+.profbody main .main-bot .choice .select a:first-child:hover p img:nth-child(2) {
+  display: block;
+}
+.profbody main .main-bot .choice a:nth-child(2) {
+  font-size: 4.25rem;
+}
+.profbody main .main-bot .choice a:nth-child(2) p {
+  position: relative;
+}
+.profbody main .main-bot .choice a:nth-child(2) p span {
+  position: absolute;
+  left: 6.75rem;
+  top: 2.25rem;
+}
+.profbody main .main-bot .choice a:nth-child(2) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+}
+.profbody main .main-bot .choice a:nth-child(2) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.7rem;
+}
+.profbody main .main-bot .choice a:nth-child(2):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody main .main-bot .choice a:nth-child(2):hover p img:first-child {
+  display: none;
+}
+.profbody main .main-bot .choice a:nth-child(2):hover p img:nth-child(2) {
+  display: block;
+}
+.profbody main .main-bot .choice a:nth-child(3) p {
+  position: relative;
+}
+.profbody main .main-bot .choice a:nth-child(3) p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody main .main-bot .choice a:nth-child(3) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody main .main-bot .choice a:nth-child(3) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody main .main-bot .choice a:nth-child(3):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody main .main-bot .choice a:nth-child(3):hover p img:first-child {
+  display: none;
+}
+.profbody main .main-bot .choice a:nth-child(3):hover p img:nth-child(2) {
+  display: block;
+}
+.profbody main .main-bot .choice a:nth-child(4) p {
+  position: relative;
+}
+.profbody main .main-bot .choice a:nth-child(4) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 5.5rem;
+}
+.profbody main .main-bot .choice a:nth-child(4) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.75rem;
+  left: 6.25rem;
+}
+.profbody main .main-bot .choice a:nth-child(4):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody main .main-bot .choice a:nth-child(4):hover p img:first-child {
+  display: none;
+}
+.profbody main .main-bot .choice a:nth-child(4):hover p img:nth-child(2) {
+  display: block;
+}
+
+.profbody1 main .main-top {
+  width: 120rem;
+  height: 40rem;
+  border: 2px solid #24b63b;
+  margin: 2.6rem auto;
+  display: grid;
+  grid-template-columns: 1fr 2.8fr 2.1fr 2.45fr 2.45fr;
+}
+.profbody1 main .main-top .a, .profbody1 main .main-top .b, .profbody1 main .main-top .c, .profbody1 main .main-top .d, .profbody1 main .main-top .e {
+  color: transparent;
+  display: grid;
+  grid-template-rows: 1fr 4.66fr 1fr;
+}
+.profbody1 main .main-top .ab, .profbody1 main .main-top .bb, .profbody1 main .main-top .cb, .profbody1 main .main-top .db, .profbody1 main .main-top .eb {
+  border-top: 2px solid #24b63b;
+  border-bottom: 2px solid #24b63b;
+}
+.profbody1 main .main-top .b, .profbody1 main .main-top .d {
+  border-left: 2px solid #24b63b;
+  border-right: 2px solid #24b63b;
+}
+.profbody1 main .main-top .bb {
+  background: url("../img/mojil.gif") no-repeat;
+  background-size: cover;
+}
+.profbody1 main .main-top .db {
+  background: url("../img/mojir.gif") no-repeat;
+  background-size: cover;
+}
+.profbody1 main .main-bot {
+  width: 110rem;
+  margin: 0 auto;
+}
+.profbody1 main .main-bot .textbox {
+  height: 32rem;
+  border: 7px solid #fff;
+  position: relative;
+}
+.profbody1 main .main-bot .textbox .refp {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+.profbody1 main .main-bot .textbox .typed {
+  line-height: 6rem;
+  padding: 3rem 5rem;
+  font-size: 4.25rem;
+}
+.profbody1 main .main-bot .textbox .typed .typing {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.065s) steps(var(--n)) forwards;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+.profbody1 main .main-bot .choice {
+  margin-top: 2rem;
+  font-family: "gamtan";
+  font-size: 5rem;
+}
+.profbody1 main .main-bot .choice .select {
+  display: flex;
+  gap: 7rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.profbody1 main .main-bot .choice a {
+  color: #ff9800;
+  text-align: center;
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  border: 7px solid #ff9800;
+}
+.profbody1 main .main-bot .choice a:first-child {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody1 main .main-bot .choice a:first-child p {
+  position: relative;
+}
+.profbody1 main .main-bot .choice a:first-child p img {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+.profbody1 main .main-bot .choice a:first-child p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(2) {
+  font-size: 4.25rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(2) p {
+  position: relative;
+}
+.profbody1 main .main-bot .choice a:nth-child(2) p span {
+  position: absolute;
+  left: 6.75rem;
+  top: 2.25rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(2) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(2) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.7rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(2):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody1 main .main-bot .choice a:nth-child(2):hover p img:first-child {
+  display: none;
+}
+.profbody1 main .main-bot .choice a:nth-child(2):hover p img:nth-child(2) {
+  display: block;
+}
+.profbody1 main .main-bot .choice a:nth-child(3) p {
+  position: relative;
+}
+.profbody1 main .main-bot .choice a:nth-child(3) p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(3) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(3) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(3):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody1 main .main-bot .choice a:nth-child(3):hover p img:first-child {
+  display: none;
+}
+.profbody1 main .main-bot .choice a:nth-child(3):hover p img:nth-child(2) {
+  display: block;
+}
+.profbody1 main .main-bot .choice a:nth-child(4) p {
+  position: relative;
+}
+.profbody1 main .main-bot .choice a:nth-child(4) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 5.5rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(4) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.75rem;
+  left: 6.25rem;
+}
+.profbody1 main .main-bot .choice a:nth-child(4):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody1 main .main-bot .choice a:nth-child(4):hover p img:first-child {
+  display: none;
+}
+.profbody1 main .main-bot .choice a:nth-child(4):hover p img:nth-child(2) {
+  display: block;
+}
+
+.profbody2 main .main-top {
+  width: 120rem;
+  height: 40rem;
+  border: 2px solid #24b63b;
+  margin: 2.6rem auto;
+  display: grid;
+  grid-template-columns: 1fr 10.5fr 6.5fr 12.3fr 4fr;
+}
+.profbody2 main .main-top .a, .profbody2 main .main-top .b, .profbody2 main .main-top .c {
+  color: transparent;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.profbody2 main .main-top .b, .profbody2 main .main-top .d {
+  border-left: 2px solid #24b63b;
+  border-right: 2px solid #24b63b;
+}
+.profbody2 main .main-top .d, .profbody2 main .main-top .e {
+  color: transparent;
+  display: grid;
+  grid-template-rows: 5.15fr 1fr;
+}
+.profbody2 main .main-top .a .ab {
+  border-top: 2px solid #24b63b;
+}
+.profbody2 main .main-top .b .bb {
+  border-top: 2px solid #24b63b;
+  background: url("../img/dizzycall.gif") no-repeat;
+  background-size: cover;
+}
+.profbody2 main .main-top .c .cb {
+  border-top: 2px solid #24b63b;
+}
+.profbody2 main .main-top .d .da {
+  background: url("../img/lisacall.gif") no-repeat;
+  background-size: cover;
+}
+.profbody2 main .main-top .d .db {
+  border-top: 2px solid #24b63b;
+}
+.profbody2 main .main-top .e .eb {
+  border-top: 2px solid #24b63b;
+}
+.profbody2 main .main-bot {
+  width: 110rem;
+  margin: 0 auto;
+}
+.profbody2 main .main-bot .textbox {
+  position: relative;
+  height: 32rem;
+  border: 7px solid #fff;
+}
+.profbody2 main .main-bot .textbox .refp {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+.profbody2 main .main-bot .textbox .typed {
+  line-height: 6rem;
+  padding: 3rem 5rem;
+  font-size: 5.5rem;
+}
+.profbody2 main .main-bot .textbox .typed p:last-child {
+  margin-top: 3rem;
+  color: #fff500;
+}
+.profbody2 main .main-bot .textbox .typed p:last-child a:hover {
+  text-decoration: underline;
+}
+.profbody2 main .main-bot .choice {
+  margin-top: 2rem;
+  font-family: "gamtan";
+  font-size: 5rem;
+}
+.profbody2 main .main-bot .choice .select {
+  display: flex;
+  gap: 7rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.profbody2 main .main-bot .choice a {
+  color: #ff9800;
+  text-align: center;
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  border: 7px solid #ff9800;
+}
+.profbody2 main .main-bot .choice a:first-child p {
+  position: relative;
+}
+.profbody2 main .main-bot .choice a:first-child p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody2 main .main-bot .choice a:first-child p img:first-child {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+.profbody2 main .main-bot .choice a:first-child p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+.profbody2 main .main-bot .choice a:first-child:hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody2 main .main-bot .choice a:first-child:hover p img:first-child {
+  display: none;
+}
+.profbody2 main .main-bot .choice a:first-child:hover p img:nth-child(2) {
+  display: block;
+}
+.profbody2 main .main-bot .choice a:nth-child(2) {
+  color: #fff500;
+  border: 7px solid #fff500;
+  font-size: 4.25rem;
+}
+.profbody2 main .main-bot .choice a:nth-child(2) p {
+  position: relative;
+}
+.profbody2 main .main-bot .choice a:nth-child(2) p img {
+  position: absolute;
+  top: 1.5rem;
+  left: 0.7rem;
+}
+.profbody2 main .main-bot .choice a:nth-child(2) p span {
+  position: absolute;
+  left: 6.75rem;
+  top: 2.25rem;
+}
+.profbody2 main .main-bot .choice a:nth-child(3) p {
+  position: relative;
+}
+.profbody2 main .main-bot .choice a:nth-child(3) p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody2 main .main-bot .choice a:nth-child(3) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody2 main .main-bot .choice a:nth-child(3) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody2 main .main-bot .choice a:nth-child(3):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody2 main .main-bot .choice a:nth-child(3):hover p img:first-child {
+  display: none;
+}
+.profbody2 main .main-bot .choice a:nth-child(3):hover p img:nth-child(2) {
+  display: block;
+}
+.profbody2 main .main-bot .choice a:nth-child(4) p {
+  position: relative;
+}
+.profbody2 main .main-bot .choice a:nth-child(4) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 5.5rem;
+}
+.profbody2 main .main-bot .choice a:nth-child(4) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.75rem;
+  left: 6.25rem;
+}
+.profbody2 main .main-bot .choice a:nth-child(4):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody2 main .main-bot .choice a:nth-child(4):hover p img:first-child {
+  display: none;
+}
+.profbody2 main .main-bot .choice a:nth-child(4):hover p img:nth-child(2) {
+  display: block;
+}
+
+.profbody3 main .main-top {
+  width: 120rem;
+  height: 40rem;
+  border: 2px solid #24b63b;
+  margin: 2.6rem auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 6fr;
+  color: transparent;
+}
+.profbody3 main .main-top .a {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  border-right: 2px solid #24b63b;
+}
+.profbody3 main .main-top .a .ab {
+  border-top: 2px solid #24b63b;
+}
+.profbody3 main .main-top .b {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+.profbody3 main .main-top .b .ba {
+  background: url("../img/friskroll.gif") no-repeat;
+  background-size: cover;
+}
+.profbody3 main .main-top .b .bb {
+  border-top: 2px solid #24b63b;
+}
+.profbody3 main .main-top .c {
+  border-left: 2px solid #24b63b;
+}
+.profbody3 main .main-top .c .status {
+  width: 68rem;
+  display: flex;
+  gap: 4rem;
+  margin: 3rem auto;
+}
+.profbody3 main .main-top .c .status .subjectl {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 45%;
+}
+.profbody3 main .main-top .c .status .subjectl .ject .sub {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+}
+.profbody3 main .main-top .c .status .subjectl .ject .sub p {
+  font-size: 4rem;
+  color: #fff;
+}
+.profbody3 main .main-top .c .status .subjectl .ject .sub p:nth-child(2) {
+  margin-left: 0.5rem;
+  text-align: left;
+}
+.profbody3 main .main-top .c .status .subjectl .ject .sub p:last-child {
+  line-height: 5rem;
+  font-size: 3rem;
+  text-align: right;
+}
+.profbody3 main .main-top .c .status .subjectl .ject .bar {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  background: #727044;
+}
+@keyframes loading-bar {
+  0% {
+    width: 1%;
+  }
+  80% {
+    width: 93%;
+  }
+  100% {
+    width: 93%;
+  }
+}
+.profbody3 main .main-top .c .status .subjectl .ject .bar .bar-gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 3rem;
+  background: #fff500;
+  animation-name: loading-bar;
+  animation-duration: 1300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.profbody3 main .main-top .c .status .subjectl .ject .bar1 {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  background: #727044;
+}
+@keyframes loading-bar_90 {
+  0% {
+    width: 1%;
+  }
+  80% {
+    width: 90%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.profbody3 main .main-top .c .status .subjectl .ject .bar1 .bar-gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 3rem;
+  background: #fff500;
+  animation-name: loading-bar_90;
+  animation-duration: 1300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.profbody3 main .main-top .c .status .subjectl .ject .bar2 {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  background: #727044;
+}
+@keyframes loading-bar_50 {
+  0% {
+    width: 1%;
+  }
+  80% {
+    width: 50%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.profbody3 main .main-top .c .status .subjectl .ject .bar2 .bar-gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 3rem;
+  background: #fff500;
+  animation-name: loading-bar_50;
+  animation-duration: 1300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.profbody3 main .main-top .c .status .subjectl .ject:last-child .sub p:first-child img {
+  max-width: none;
+}
+.profbody3 main .main-top .c .status .subjectl .ject:last-child .sub p:nth-child(2) {
+  font-size: 3rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.profbody3 main .main-top .c .status .subjectr {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 45%;
+}
+.profbody3 main .main-top .c .status .subjectr .ject .sub {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+}
+.profbody3 main .main-top .c .status .subjectr .ject .sub p {
+  font-size: 4rem;
+  color: #fff;
+}
+.profbody3 main .main-top .c .status .subjectr .ject .sub p:nth-child(2) {
+  margin-left: 0.5rem;
+  text-align: left;
+}
+.profbody3 main .main-top .c .status .subjectr .ject .sub p:last-child {
+  line-height: 5rem;
+  font-size: 3rem;
+  text-align: right;
+}
+.profbody3 main .main-top .c .status .subjectr .ject .bar {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  background: #727044;
+}
+@keyframes loading-bar_55 {
+  0% {
+    width: 1%;
+  }
+  80% {
+    width: 55%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+.profbody3 main .main-top .c .status .subjectr .ject .bar .bar-gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 3rem;
+  background: #fff500;
+  animation-name: loading-bar_55;
+  animation-duration: 1300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.profbody3 main .main-top .c .status .subjectr .ject .bar1 {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  background: #727044;
+}
+@keyframes loading-bar_40 {
+  0% {
+    width: 1%;
+  }
+  80% {
+    width: 40%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+.profbody3 main .main-top .c .status .subjectr .ject .bar1 .bar-gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 3rem;
+  background: #fff500;
+  animation-name: loading-bar_40;
+  animation-duration: 1300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.profbody3 main .main-top .c .status .subjectr .ject .bar2 {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  background: #727044;
+}
+@keyframes loading-bar_45 {
+  0% {
+    width: 1%;
+  }
+  80% {
+    width: 45%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+.profbody3 main .main-top .c .status .subjectr .ject .bar2 .bar-gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 3rem;
+  background: #fff500;
+  animation-name: loading-bar_45;
+  animation-duration: 1300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.profbody3 main .main-top .c .status .subjectr .ject:last-child .sub p:first-child img {
+  max-width: none;
+}
+.profbody3 main .main-top .c .status .subjectr .ject:last-child .sub p:nth-child(2) {
+  font-size: 3rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.profbody3 main .main-bot {
+  width: 110rem;
+  margin: 0 auto;
+}
+.profbody3 main .main-bot .textbox {
+  position: relative;
+  height: 32rem;
+  border: 7px solid #fff;
+}
+.profbody3 main .main-bot .textbox .refp {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+.profbody3 main .main-bot .textbox .typed {
+  line-height: 6rem;
+  padding: 3rem 5rem;
+  font-size: 4.5rem;
+}
+.profbody3 main .main-bot .textbox .typed .typing {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.0825s) steps(var(--n)) forwards;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+.profbody3 main .main-bot .choice {
+  margin-top: 2rem;
+  font-family: "gamtan";
+  font-size: 5rem;
+}
+.profbody3 main .main-bot .choice .select {
+  display: flex;
+  gap: 7rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.profbody3 main .main-bot .choice a {
+  color: #ff9800;
+  text-align: center;
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  border: 7px solid #ff9800;
+}
+.profbody3 main .main-bot .choice a:first-child p {
+  position: relative;
+}
+.profbody3 main .main-bot .choice a:first-child p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody3 main .main-bot .choice a:first-child p img:first-child {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+.profbody3 main .main-bot .choice a:first-child p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+.profbody3 main .main-bot .choice a:first-child:hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody3 main .main-bot .choice a:first-child:hover p img:first-child {
+  display: none;
+}
+.profbody3 main .main-bot .choice a:first-child:hover p img:nth-child(2) {
+  display: block;
+}
+.profbody3 main .main-bot .choice a:nth-child(2) {
+  font-size: 4.25rem;
+}
+.profbody3 main .main-bot .choice a:nth-child(2) p {
+  position: relative;
+}
+.profbody3 main .main-bot .choice a:nth-child(2) p span {
+  position: absolute;
+  left: 6.75rem;
+  top: 2.25rem;
+}
+.profbody3 main .main-bot .choice a:nth-child(2) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+}
+.profbody3 main .main-bot .choice a:nth-child(2) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.7rem;
+}
+.profbody3 main .main-bot .choice a:nth-child(2):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody3 main .main-bot .choice a:nth-child(2):hover p img:first-child {
+  display: none;
+}
+.profbody3 main .main-bot .choice a:nth-child(2):hover p img:nth-child(2) {
+  display: block;
+}
+.profbody3 main .main-bot .choice a:nth-child(3) {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody3 main .main-bot .choice a:nth-child(3) p {
+  position: relative;
+}
+.profbody3 main .main-bot .choice a:nth-child(3) p img {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody3 main .main-bot .choice a:nth-child(3) p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody3 main .main-bot .choice a:nth-child(4) p {
+  position: relative;
+}
+.profbody3 main .main-bot .choice a:nth-child(4) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 5.5rem;
+}
+.profbody3 main .main-bot .choice a:nth-child(4) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.75rem;
+  left: 6.25rem;
+}
+.profbody3 main .main-bot .choice a:nth-child(4):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody3 main .main-bot .choice a:nth-child(4):hover p img:first-child {
+  display: none;
+}
+.profbody3 main .main-bot .choice a:nth-child(4):hover p img:nth-child(2) {
+  display: block;
+}
+
+.profbody4 main .main-top {
+  width: 120rem;
+  height: 40rem;
+  border: 2px solid #24b63b;
+  margin: 2.6rem auto;
+  display: grid;
+  grid-template-columns: 3.4fr 1fr;
+  color: transparent;
+}
+.profbody4 main .main-top .a {
+  border-right: 2px solid #24b63b;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+.profbody4 main .main-top .a .aa {
+  background: url("../img/title1.png") no-repeat center;
+}
+.profbody4 main .main-top .a .ab {
+  border-top: 2px solid #24b63b;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+.profbody4 main .main-top .a .ab .abb {
+  border-right: 2px solid #24b63b;
+  border-left: 2px solid #24b63b;
+}
+.profbody4 main .main-top .a .ab .abb iframe {
+  padding: 1rem;
+}
+.profbody4 main .main-top .b {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+.profbody4 main .main-top .b .ba {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profbody4 main .main-top .b .ba .baa {
+  background: url("../img/dog.gif") no-repeat;
+  background-size: cover;
+}
+.profbody4 main .main-top .b .ba .bab {
+  background: url("../img/temmie.gif") no-repeat;
+  background-size: cover;
+}
+.profbody4 main .main-top .b .bb {
+  border-top: 2px solid #24b63b;
+  background: url("../img/sans.gif") no-repeat center;
+  background-size: cover;
+}
+.profbody4 main .main-bot {
+  width: 110rem;
+  margin: 0 auto;
+}
+.profbody4 main .main-bot .textbox {
+  position: relative;
+  height: 32rem;
+  border: 7px solid #fff;
+}
+.profbody4 main .main-bot .textbox .refp {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+.profbody4 main .main-bot .textbox .typed {
+  line-height: 6rem;
+  padding: 3rem 5rem;
+  font-size: 4.5rem;
+}
+.profbody4 main .main-bot .textbox .typed .typing {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #fff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#fff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.055s) steps(var(--n)) forwards;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+.profbody4 main .main-bot .choice {
+  margin-top: 2rem;
+  font-family: "gamtan";
+  font-size: 5rem;
+}
+.profbody4 main .main-bot .choice .select {
+  display: flex;
+  gap: 7rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.profbody4 main .main-bot .choice a {
+  color: #ff9800;
+  text-align: center;
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  border: 7px solid #ff9800;
+}
+.profbody4 main .main-bot .choice a:first-child p {
+  position: relative;
+}
+.profbody4 main .main-bot .choice a:first-child p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody4 main .main-bot .choice a:first-child p img:first-child {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+.profbody4 main .main-bot .choice a:first-child p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+.profbody4 main .main-bot .choice a:first-child:hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody4 main .main-bot .choice a:first-child:hover p img:first-child {
+  display: none;
+}
+.profbody4 main .main-bot .choice a:first-child:hover p img:nth-child(2) {
+  display: block;
+}
+.profbody4 main .main-bot .choice a:nth-child(2) {
+  font-size: 4.25rem;
+}
+.profbody4 main .main-bot .choice a:nth-child(2) p {
+  position: relative;
+}
+.profbody4 main .main-bot .choice a:nth-child(2) p span {
+  position: absolute;
+  left: 6.75rem;
+  top: 2.25rem;
+}
+.profbody4 main .main-bot .choice a:nth-child(2) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+}
+.profbody4 main .main-bot .choice a:nth-child(2) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.7rem;
+}
+.profbody4 main .main-bot .choice a:nth-child(2):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody4 main .main-bot .choice a:nth-child(2):hover p img:first-child {
+  display: none;
+}
+.profbody4 main .main-bot .choice a:nth-child(2):hover p img:nth-child(2) {
+  display: block;
+}
+.profbody4 main .main-bot .choice a:nth-child(3) p {
+  position: relative;
+}
+.profbody4 main .main-bot .choice a:nth-child(3) p span {
+  position: absolute;
+  left: 8rem;
+  top: 2rem;
+}
+.profbody4 main .main-bot .choice a:nth-child(3) p img:first-child {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody4 main .main-bot .choice a:nth-child(3) p img:nth-child(2) {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+.profbody4 main .main-bot .choice a:nth-child(3):hover {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody4 main .main-bot .choice a:nth-child(3):hover p img:first-child {
+  display: none;
+}
+.profbody4 main .main-bot .choice a:nth-child(3):hover p img:nth-child(2) {
+  display: block;
+}
+.profbody4 main .main-bot .choice a:nth-child(4) {
+  color: #fff500;
+  border: 7px solid #fff500;
+}
+.profbody4 main .main-bot .choice a:nth-child(4) p {
+  position: relative;
+}
+.profbody4 main .main-bot .choice a:nth-child(4) p img {
+  position: absolute;
+  top: 1.5rem;
+  left: 6.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */
